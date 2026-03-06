@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/doceria-pwa/',
   plugins: [
     vue(),
     VitePWA({
@@ -16,8 +17,8 @@ export default defineConfig({
         theme_color: '#a21caf',
         background_color: '#fff7fb',
         display: 'standalone',
-        scope: '/',
-        start_url: '/',
+        scope: '/doceria-pwa/',
+        start_url: '/doceria-pwa/',
         icons: [
           {
             src: 'pwa-192x192.png',
